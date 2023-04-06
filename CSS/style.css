@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Ibarra+Real+Nova:ital,wght@1,600&family=Itim&family=League+Spartan:wght@700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@600&family=Raleway:wght@400;700&family=Roboto:wght@300;400&family=Unbounded:wght@700&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: hsl(229, 57%, 11%) ;
+    background-image: url("/images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: bottom;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: end;
+}
+.background1{
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(228, 56%, 26%) ;
+    width: 20%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0.5rem;
+    margin-right: 1.5%;
+}
+.background1 .image img{
+    width: 40%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.background1 .row{
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+.background1 .row img{
+    width: 10%;
+    height: auto;
+    padding: 4%;
+    background-color:  hsl(229, 57%, 11%);
+    margin-right: 8%;
+    border-radius: 0.5rem;
+}
+.background2{
+    margin-left: 1.5%;
+    width: 40%;
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background2 h1{
+    font-size: 0.875rem;
+    font-family: 'Raleway', sans-serif;
+    color: hsl(229, 7%, 55%);
+    margin-bottom: 1rem;
+}
+.background2 h1 span{
+    color:  hsl(243, 100%, 93%);
+}
+.precentage{
+    position: relative;
+    width: 80%;
+    background-color: hsl(228, 56%, 26%) ;
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+}
+.skill-box{
+    width: 100%;
+}
+.skill-bar{
+    width: 100%;
+    background-color:  hsl(229, 57%, 11%) ;
+    height: 1.5rem;
+    border-radius: 1rem;
+}
+.skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 81.5%;
+    border-radius: 6px;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%) ,hsl(335, 100%, 65%));
+}
+.tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 25%;
+    position: absolute;
+    right: -6rem;
+    top: -7rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color:  hsl(243, 100%, 93%);
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    bottom: -1.3rem;
+    height: 3rem ;
+    left: 72%;
+    width: 3rem;
+    background-color: hsl(243, 100%, 93%);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-size: 0.875rem;
+    font-family: 'Raleway', sans-serif;
+    color:  hsl(243, 100%, 93%);
+    margin-bottom: 1rem;
+}
+.tooltip h1{
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    
+}
+.tooltip h2{
+    color: hsl(229, 7%, 55%);
+}
+@media only screen and (max-width:1439px){
+    body{
+        width: 100%;
+        height: 100vh;
+        margin:auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        background-image: url("/images/bg-mobile.png");
+        background-size: cover;
+        background-position: 0;
+        width: 20rem;
+        height: 575px;
+    }
+    .background1{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2rem;
+    }
+    .background1 .image img{
+        width: 50%;
+    }
+    .background2{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1rem;
+    }
+    .tooltip{
+        margin-top: 3.5rem;
+        width: 70%;
+        top: 0;
+        right: 0;
+    }
+    .tooltip::before{
+        content: none;
+    }
+    .skill-box h1{
+        font-size: 0.8rem;
+    }
+    .tooltip h1{
+        color: black;
+        font-size: 1.3rem;
+    }
+}
